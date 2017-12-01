@@ -14,20 +14,24 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 syntax on
-colorscheme lucius
-filetype on
-filetype plugin on
+"common
+set number
+set expandtab
+set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set autoindent
 set background=dark
-set nu
-set tabstop
 set nobackup
 set cursorline
 set ruler
-set autoindent
-autocmd InsertLeave * se nocul
-autocmd InsertEnter * se cul
 set showcmd
 set laststatus=1
 set foldenable
 set foldmethod=manual
 set clipboard=unnamed
+"theme
+colorscheme lucius
+
+autocmd InsertLeave * se nocul
+autocmd InsertEnter * se cul
