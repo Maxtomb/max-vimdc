@@ -24,7 +24,6 @@ set autoindent
 set background=dark
 set nobackup
 set cursorline
-set ruler
 set showcmd
 set laststatus=1
 set foldenable
