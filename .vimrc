@@ -5,10 +5,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'https://github.com/powerline/powerline.git'
 Plugin 'jonathanfilip/vim-lucius'
+Plugin 'kien/rainbow_parentheses.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
