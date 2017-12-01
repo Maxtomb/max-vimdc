@@ -23,7 +23,6 @@ set softtabstop=4
 set autoindent
 set background=dark
 set nobackup
-set cursorline
 set showcmd
 set laststatus=1
 set foldenable
