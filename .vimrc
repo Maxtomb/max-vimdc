@@ -11,10 +11,12 @@ Plugin 'https://github.com/powerline/powerline.git'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'msanders/snipmate.vim'
+"Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
+let mapleader=","
+map<silent><leader>e :e ~/.vimrc<cr>
 
 """"""""""""""""""""""
 "Common
@@ -36,7 +38,6 @@ set clipboard=unnamed
 colorscheme lucius
 autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
-
 
 """"""""""""""""""""""
 "Quickly Run
