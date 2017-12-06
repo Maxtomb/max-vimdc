@@ -12,12 +12,15 @@ Plugin 'jonathanfilip/vim-lucius'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'msanders/snipmate.vim'
 "Plugin 'davidhalter/jedi-vim'
+Plugin 'brookhong/DBGPavim'
+"Plugin 'vim-scripts/DBGPavim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 let mapleader=","
 map<silent><leader>e :e ~/.vimrc<cr>
-
+map<silent><leader>t :NERDTree<cr>
+map<silent><leader>p :set paste<cr>
 """"""""""""""""""""""
 "Common
 """"""""""""""""""""""
@@ -39,10 +42,17 @@ colorscheme lucius
 autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
 
+
 """"""""""""""""""""""
-"Quickly Run
+"xdebug
 """"""""""""""""""""""
-map <F5> :call CompileRunGcc()<CR>
+let g:dbgPavimPort=9020
+let g:dbgPavimBreakAtEntry=0
+let g:dbgPavimPathMap = [['/root/csmp_build/application','/opt/csmp/application'],]
+""""""""""""""""""""""
+"Shortcut
+""""""""""""""""""""""
+map <F9> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
     exec "w"
     if &filetype == 'c'
