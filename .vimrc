@@ -14,6 +14,9 @@ Plugin 'msanders/snipmate.vim'
 "Plugin 'davidhalter/jedi-vim'
 Plugin 'gotcha/vimpdb'
 Plugin 'brookhong/DBGPavim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/tmuxline.vim'
 "Plugin 'vim-scripts/DBGPavim'
 
 call vundle#end()            " required
@@ -24,6 +27,12 @@ map<silent><leader>n :NERDTree<cr>
 map<silent><leader>p :set paste<cr>
 map<silent><leader>w :wq<cr>
 map<silent><leader>t :tabnew<cr>
+""""""""""""""""""""""
+"airline
+""""""""""""""""""""""
+let g:airline_theme='behelit'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
 """"""""""""""""""""""
 "Common
 """"""""""""""""""""""
