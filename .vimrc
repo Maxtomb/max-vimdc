@@ -44,7 +44,7 @@ set clipboard=unnamed
 colorscheme lucius
 autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
-
+set term=screen-256color 
 """"""""""""""""""""""
 "command
 """"""""""""""""""""""
