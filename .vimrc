@@ -27,6 +27,7 @@ map<silent><leader>n :NERDTree<cr>
 map<silent><leader>p :set paste<cr>
 map<silent><leader>w :wq<cr>
 map<silent><leader>t :tabnew<cr>
+<<<<<<< HEAD
 """"""""""""""""""""""
 "airline
 """"""""""""""""""""""
