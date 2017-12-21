@@ -1,5 +1,6 @@
 #!/bin/bash
 cp .vimrc ~/.vimrc
+cp .tmux.conf ~/.tmux.conf
 if test -e ~/.vim/bundle/Vundle.vim 
 then
     echo "vundle exist"
