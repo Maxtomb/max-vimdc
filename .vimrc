@@ -27,6 +27,13 @@ map<silent><leader>n :NERDTree<cr>
 map<silent><leader>p :set paste<cr>
 map<silent><leader>w :wq<cr>
 map<silent><leader>t :tabnew<cr>
+<<<<<<< HEAD
+""""""""""""""""""""""
+"airline
+""""""""""""""""""""""
+let g:airline_theme='behelit'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tmuxline#enabled = 0
 """"""""""""""""""""""
 "airline
 """"""""""""""""""""""
